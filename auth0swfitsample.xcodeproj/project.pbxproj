@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F4012D272D71E5BD00230144 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = F4012D262D71E5BD00230144 /* Auth0 */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		F4012D032D71E1D900230144 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +33,22 @@
 		F4012D0C2D71E1D900230144 /* auth0swfitsampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = auth0swfitsampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F459778A2D723104009E051F /* Exceptions for "auth0swfitsample" folder in "auth0swfitsample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F4012CF12D71E1D700230144 /* auth0swfitsample */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		F4012CF42D71E1D700230144 /* auth0swfitsample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F459778A2D723104009E051F /* Exceptions for "auth0swfitsample" folder in "auth0swfitsample" target */,
+			);
 			path = auth0swfitsample;
 			sourceTree = "<group>";
 		};
@@ -52,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4012D272D71E5BD00230144 /* Auth0 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +130,7 @@
 			);
 			name = auth0swfitsample;
 			packageProductDependencies = (
+				F4012D262D71E5BD00230144 /* Auth0 */,
 			);
 			productName = auth0swfitsample;
 			productReference = F4012CF22D71E1D700230144 /* auth0swfitsample.app */;
@@ -195,6 +214,9 @@
 			);
 			mainGroup = F4012CE92D71E1D700230144;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F4012D202D71E39E00230144 /* XCRemoteSwiftPackageReference "Auth0" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F4012CF32D71E1D700230144 /* Products */;
 			projectDirPath = "";
@@ -393,12 +415,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = auth0swfitsample/auth0swfitsample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"auth0swfitsample/Preview Content\"";
 				DEVELOPMENT_TEAM = S479C68V3M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = auth0swfitsample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -409,6 +433,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NSAppTransportSecurity = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.auth0.sample.auth0swfitsample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -422,12 +447,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = auth0swfitsample/auth0swfitsample.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"auth0swfitsample/Preview Content\"";
 				DEVELOPMENT_TEAM = S479C68V3M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = auth0swfitsample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -438,6 +465,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				NSAppTransportSecurity = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.auth0.sample.auth0swfitsample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -558,6 +586,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F4012D202D71E39E00230144 /* XCRemoteSwiftPackageReference "Auth0" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/auth0/Auth0.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F4012D262D71E5BD00230144 /* Auth0 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F4012D202D71E39E00230144 /* XCRemoteSwiftPackageReference "Auth0" */;
+			productName = Auth0;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F4012CEA2D71E1D700230144 /* Project object */;
 }
