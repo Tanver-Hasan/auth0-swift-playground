@@ -28,18 +28,17 @@ extension User {
 
         self.id = id
         self.name = name
-        self.email = jwt["email"].string // ✅ Optional
+        self.email = jwt["email"].string
         self.emailVerified = String(describing: emailVerified)
         self.picture = jwt["picture"].string // ✅ Optional
         self.updatedAt = updatedAt
 
-        // ✅ Log Decoded Token Information
         print("🔓 Decoded JWT Token:")
-        print("🆔 ID: \(self.id)")
-        print("👤 Name: \(self.name)")
-        print("📧 Email: \(self.email ?? "No Email")")
-        print("✅ Email Verified: \(self.emailVerified)")
-        print("🖼 Profile Picture URL: \(self.picture ?? "No Profile Picture")")
-        print("⏳ Updated At: \(self.updatedAt)")
+        print("ID: \(self.id)")
+        print(" Name: \(self.name)")
+        print("Email: \(self.email ?? "No Email")")
+        print("Email Verified: \(self.emailVerified)")
+        print("Profile Picture URL: \(self.picture ?? "No Profile Picture")")
+        print("Updated At: \(self.updatedAt)")
     }
 }

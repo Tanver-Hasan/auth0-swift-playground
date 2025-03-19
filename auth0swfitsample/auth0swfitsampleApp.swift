@@ -16,7 +16,7 @@ struct auth0swfitsampleApp: App {
                 .padding(.bottom, 16)
                 .ignoresSafeArea(.keyboard, edges: .bottom)
                 .background(Color("Background").ignoresSafeArea())
-                .buttonStyle(PrimaryButtonStyle())
+//               .buttonStyle(PrimaryButtonStyle())
                 .onAppear {
                     UITableView.appearance().backgroundColor = .clear
                     UITableView.appearance().bounces = false

@@ -96,6 +96,7 @@ struct PrimaryButtonStyle: ButtonStyle {
                            trailing: self.padding * 6))
             .background(Color.black)
             .foregroundColor(.white)
+            .frame(minWidth: .infinity, minHeight: 44)
             .clipShape(RoundedRectangle(cornerRadius: 8))
     }
 }

@@ -27,7 +27,6 @@ struct WebView: UIViewRepresentable {
     }
 }
 
-import SwiftUI
 
 struct ContentView: View {
     @State private var showWebView = false

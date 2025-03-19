@@ -32,7 +32,6 @@ struct ProfileView: View {
     }
 }
 
-// ✅ Helper View for Profile Info Display
 struct ProfileRow: View {
     let label: String
     let value: String
